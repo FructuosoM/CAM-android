@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CAM</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CAM UNAM</string>
+    <string name="nav_header_subtitle">cam.economia.unam.mx</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="privacidad">Por favor, antes de proporcionarnos tus datos personales, tómate un momento para leer el siguiente Aviso de Privacidad en el que informamos que, de conformidad con lo dispuesto por el Reglamento de Transparencia, Acceso a la Información Pública y Protección de Datos Personales para la Universidad Nacional Autónoma de México (en adelante “LA UNAM”), sobre cómo y con qué fines tratamos tu información personal. Al proporcionar datos al Centro ...</string>
+</resources>

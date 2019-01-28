@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent" android:paddingLeft= "@dimen/activity_horizontal_margin"
+    android:paddingRight = "@dimen/activity_horizontal_margin"
+    android:paddingTop = "@dimen/activity_vertical_margin"
+    android:paddingBottom = "@dimen/activity_vertical_margin" tools:context = ".MainActivity">
+
+    <TextView android:text = "Login / Registro" android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/textviewLogin"
+        android:textSize = "30sp"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Anónimo"
+        android:id = "@+id/textViewUsuario"
+        android:layout_below = "@+id/textviewLogin"
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#080f31"
+        android:textSize = "20dp" />
+
+    <EditText
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/editTextCorreo"
+        android:hint = "correo electrónico"
+        android:focusable = "true"
+        android:textColorHighlight = "#f77a04"
+        android:textColorHint = "#ffa200"
+        android:layout_marginTop = "46dp"
+        android:layout_below = "@+id/imageView"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@+id/textViewUsuario"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Imagen de usuario" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPass"
+        android:layout_below="@+id/editTextCorreo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editTextCorreo"
+        android:layout_alignEnd="@+id/editTextCorreo"
+        android:textColorHint="#ffa200"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-94dp"
+        android:layout_marginRight="-94dp"
+        android:layout_toStartOf="@+id/textviewLogin"
+        android:layout_toLeftOf="@+id/textviewLogin"
+        android:text="Iniciar Sesión" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-94dp"
+        android:layout_marginLeft="-94dp"
+        android:layout_toEndOf="@+id/textviewLogin"
+        android:layout_toRightOf="@+id/textviewLogin"
+        android:text="Registrarse" />
+
+</RelativeLayout>

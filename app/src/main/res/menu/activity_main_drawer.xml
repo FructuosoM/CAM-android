@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_registro"
+            android:icon="@drawable/ic_how_to_reg"
+            android:title="Registro/Login" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_person_pin"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_cuestionarios"
+            android:icon="@drawable/ic_equalizer"
+            android:title="Mis Cuestionarios" />
+    </group>
+
+    <item android:title="Información">
+        <menu>
+            <item
+                android:id="@+id/nav_politica"
+                android:icon="@drawable/ic_fingerprint"
+                android:title="Politica de privacidad" />
+            <item
+                android:id="@+id/nav_resultados"
+                android:icon="@drawable/ic_screen_share"
+                android:title="Resultados en el sitio CAM" />
+        </menu>
+    </item>
+
+</menu>
