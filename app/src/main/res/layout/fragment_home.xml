@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/homefrag"
+    android:padding="12dp"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -28,7 +29,7 @@
                 android:id="@+id/btnCuestionarioUno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_cuestionario_1"
+                android:src="@drawable/number1"
                 android:contentDescription="Cuestionario 1"
                 android:layout_weight="3"
                 android:padding="20dp"/>
@@ -49,7 +50,7 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_cuestionario_2"
+                android:src="@drawable/number2"
                 android:contentDescription="Cuestionario 2"
                 android:layout_weight="3"
                 android:padding="20dp"/>
@@ -70,7 +71,7 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_cuestionario_3"
+                android:src="@drawable/number3"
                 android:contentDescription="Cuestionario 3"
                 android:layout_weight="3"
                 android:padding="20dp"/>

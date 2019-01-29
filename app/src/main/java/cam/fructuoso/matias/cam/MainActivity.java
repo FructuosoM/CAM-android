@@ -1,4 +1,4 @@
-package cam.fructuso.matias.cam;
+package cam.fructuoso.matias.cam;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;

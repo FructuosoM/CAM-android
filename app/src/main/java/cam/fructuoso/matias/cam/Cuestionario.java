@@ -1,4 +1,4 @@
-package cam.fructuso.matias.cam;
+package cam.fructuoso.matias.cam;
 
 public class Cuestionario {
     private int CIN;

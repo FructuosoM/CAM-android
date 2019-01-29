@@ -13,10 +13,14 @@
 
 
         <TextView
-            android:layout_width="353dp"
+            android:id="@+id/tvPolitica"
+            android:layout_width="match_parent"
             android:layout_height="218dp"
-            android:text="@string/privacidad"
-            android:layout_weight="10"/>
+            android:layout_weight="10"
+            android:scrollbars="vertical"
+            android:maxLines="25"
+            android:padding="6dp"
+            android:text="@string/privacidad" />
 
         <Button
             android:id="@+id/buttonAceptarPrivacidad"

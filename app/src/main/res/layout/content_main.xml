@@ -12,7 +12,7 @@
 
     <FrameLayout
         android:id="@+id/fragment"
-        android:name="cam.fructuso.matias.cam.HomeFragment"
+        android:name="cam.fructuoso.matias.cam.HomeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </FrameLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cam.fructuso.matias.cam">
+    package="cam.fructuoso.matias.cam">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,18 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".MainActivity"
+            android:name="cam.fructuoso.matias.cam.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CuestionariosActivity" />
-        <activity android:name=".CPPB1Activity" />
-        <activity android:name=".CPPB2Activity"></activity>
+        <activity android:name="cam.fructuoso.matias.cam.CuestionariosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cam.fructuoso.matias.cam.CPPB1Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="cam.fructuoso.matias.cam.CPPB2Activity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

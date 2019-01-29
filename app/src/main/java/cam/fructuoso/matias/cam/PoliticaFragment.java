@@ -1,36 +1,34 @@
-package cam.fructuso.matias.cam;
+package cam.fructuoso.matias.cam;
 
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.DrawerLayout;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ResultadosFragment#newInstance} factory method to
+ * Use the {@link PoliticaFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ResultadosFragment extends Fragment {
+public class PoliticaFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    private WebView mWebView = null;
+    private TextView textView = null;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
 
-    public ResultadosFragment() {
+    public PoliticaFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +38,11 @@ public class ResultadosFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ResultadosFragment.
+     * @return A new instance of fragment PoliticaFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ResultadosFragment newInstance(String param1, String param2) {
-        ResultadosFragment fragment = new ResultadosFragment();
+    public static PoliticaFragment newInstance(String param1, String param2) {
+        PoliticaFragment fragment = new PoliticaFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,23 +63,11 @@ public class ResultadosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_resultados, container, false);
-
-        View v=inflater.inflate(R.layout.fragment_resultados, container, false);
-        mWebView = (WebView) v.findViewById(R.id.webview);
-        mWebView.loadUrl("https://cam.economia.unam.mx/");
-
-        // Enable Javascript
-        WebSettings webSettings = mWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setAppCacheEnabled(true);
-
-        // Force links and redirects to open in the WebView instead of in a browser
-        mWebView.setWebViewClient(new WebViewClient());
-
+        //return inflater.inflate(R.layout.fragment_politica, container, false);
+        View v = inflater.inflate(R.layout.fragment_politica, container, false);
+        textView = v.findViewById(R.id.tvPolitica);
+        textView.setMovementMethod(new ScrollingMovementMethod());
         return v;
-
-
     }
 
 }

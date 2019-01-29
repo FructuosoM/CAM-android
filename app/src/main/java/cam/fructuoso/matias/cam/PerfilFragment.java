@@ -1,4 +1,4 @@
-package cam.fructuso.matias.cam;
+package cam.fructuoso.matias.cam;
 
 
 import android.os.Bundle;
